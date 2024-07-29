@@ -60,7 +60,7 @@ This guide will assist you in setting up a IDCHAINCOIN Masternode on a Linux Ser
 ##### 2. Send Collateral amount of IDCHAINCOIN to copied address
 
 ##### 3. Open console Get MN output and set masternode configuration file and save it
-- ```mn1 VPS_IP:23190 masternode_genkey masternode_output output_index```:
+- ```mn1 VPS_IP:94631 masternode_genkey masternode_output output_index```:
 
 ##### 4. Wait at least 15 confirmation of transaction
 
