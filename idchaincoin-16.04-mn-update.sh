@@ -32,8 +32,8 @@ stop_daemon
 rm -rf /usr/local/bin/idchaincoin*
 mkdir IDCHAINCOIN_1.0.0
 cd IDCHAINCOIN_1.0.0
-wget https://github.com/Idchaincoin/idchaincoin/releases/download/v1.0.0/idchaincoin-2.2.0-linux-16.04.tar.gz
-tar -xzvf idchaincoin-2.2.0-linux-16.04.tar.gz
+wget https://github.com/Idchaincoin/idchaincoin/releases/download/v1.0.0/idchaincoin-1.0.0-linux-16.04.tar.gz
+tar -xzvf idchaincoin-1.0.0-linux-16.04.tar.gz
 mv idchaincoind /usr/local/bin/idchaincoind
 mv idchaincoin-cli /usr/local/bin/idchaincoin-cli
 chmod +x /usr/local/bin/idchaincoin*

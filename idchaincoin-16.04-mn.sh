@@ -130,8 +130,8 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/idchai*
-wget https://github.com/Idchaincoin/idchaincoin/releases/download/v1.0.0/idchaincoin-2.2.0-linux-16.04.tar.gz
-tar -xzvf idchaincoin-2.2.0-linux-16.04.tar.gz
+wget https://github.com/Idchaincoin/idchaincoin/releases/download/v1.0.0/idchaincoin-1.0.0-linux-16.04.tar.gz
+tar -xzvf idchaincoin-1.0.0-linux-16.04.tar.gz
 sudo chmod -R 755 idchaincoin-cli
 sudo chmod -R 755 idchaincoind
 cp -p -r idchaincoind /usr/local/bin
