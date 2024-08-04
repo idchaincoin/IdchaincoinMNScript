@@ -75,11 +75,3 @@ This guide will assist you in setting up a IDCHAINCOIN Masternode on a Linux Ser
 - ```idchaincoin-cli getmasternodestatus```  
 
 **Сongratulations you did it!**
-
-
-sudo chmod +x idchaincoin-18.04-20.04-mn-update.sh
-
-./idchaincoin-18.04-20.04-mn-update.sh
-```
-
-***
