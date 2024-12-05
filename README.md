@@ -1,5 +1,5 @@
 # IDCHAINCOIN Masternode Setup
-This guide will assist you in setting up a IDCHAINCOIN Masternode on a Linux Server running Ubuntu 16.04 / 18.04 / 20.04
+This guide will assist you in setting up an IDCHAIN COIN Masternode on a Linux Server running Ubuntu 16.04 / 18.04 / 20.04
 
 - [IDCHAINCOIN Masternode Setup](#idchaincoin-masternode-setup)  
   	* [Requirements](#requirements) 
@@ -19,9 +19,9 @@ This guide will assist you in setting up a IDCHAINCOIN Masternode on a Linux Ser
 	 [7. Check Masternode Status in VPS](#7-check-masternode-status-in-vps)  
 
 ## Requirements
-- MN Collateral amount of IDCHAINCOIN coins.
+- MN Collateral amount of IDCHAIN coins.
 - A VPS running Linux Ubuntu 16.04 or 18.04 or 20.04 with 1 CPU & 1GB Memory minimum (2gb Recommended) from [Vultr](https://www.vultr.com/?ref=8622028) or any other providers.
-- IDCHAINCOIN Wallet (Local Wallet)
+- IDCHAIN COIN Wallet (Local Wallet)
 - An SSH Client (<a href="https://www.putty.org/" target="_blank">Putty</a> or <a href="https://dl.bitvise.com/BvSshClient-Inst.exe" target="_blank">Bitvise</a>)
 
 
@@ -46,8 +46,8 @@ This guide will assist you in setting up a IDCHAINCOIN Masternode on a Linux Ser
    
 **Now ask for VPS Public IP Address** 
 
-**Now you need to wait some time, while script preparing the VPS to setup**  
-##### 5. Copy masternode private key from VPS console window and pres "Enter":
+**Now you need to wait some time, while script is preparing the VPS to setup**  
+##### 5. Copy masternode private key from VPS console window and press "Enter":
 
 
 - to check VPS daemon status, type: ```idchaincoin-cli getinfo```
@@ -79,7 +79,7 @@ This guide will assist you in setting up a IDCHAINCOIN Masternode on a Linux Ser
 
 # Guide for IDCHAINCOIN v1.2.0 MasterNode Update:
 
-The instructions below are designed for users currently running an older version of IDCHAINCOIN v1.1.0 need update to v1.2.0
+The instructions below are designed for users currently running an older version of IDCHAIN COIN v1.1.0 which needs to be updated to v1.2.0
 
 ##### For Ubuntu 16.04
 ```
