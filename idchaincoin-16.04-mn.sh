@@ -1,5 +1,5 @@
 #!/bin/bash
-# IDCHAINCOIN Masternode Setup Script v1.0.0 for Ubuntu 16.04 LTS
+# IDCHAINCOIN Masternode Setup Script v1.2.0 for Ubuntu 16.04 LTS
 #
 # Script will attempt to autodetect primary public IP address
 # and generate masternode private key unless specified in command line
@@ -47,7 +47,7 @@ function stop_daemon {
 genkey=$1
 clear
 
-echo -e "${GREEN} ------- IDCHAINCOIN MASTERNODE INSTALLER v1.0.0--------+
+echo -e "${GREEN} ------- IDCHAINCOIN MASTERNODE INSTALLER v1.2.0--------+
  |                                                  |
  |                                                  |::
  |       The installation will install and run      |::
@@ -130,8 +130,8 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/idchai*
-wget https://github.com/Idchaincoin/idchaincoin/releases/download/v1.0.0/idchaincoin-1.0.0-linux-16.04.tar.gz
-tar -xzvf idchaincoin-1.0.0-linux-16.04.tar.gz
+wget https://github.com/idchaincoin/idchaincoin/releases/download/v1.2.0/idchaincoin-1.2.0-Ubuntu-daemon-16.04.tar.gz
+tar -xzvf idchaincoin-1.2.0-Ubuntu-daemon-16.04.tar.gz
 sudo chmod -R 755 idchaincoin-cli
 sudo chmod -R 755 idchaincoind
 cp -p -r idchaincoind /usr/local/bin
@@ -187,7 +187,7 @@ done
     idchaincoin-cli stop
     sleep 5
 cd ~/.idchaincoin && rm -rf blocks chainstate sporks zerocoin
-cd ~/.idchaincoin && https://github.com/Idchaincoin/idchaincoin/releases/download/v1.0.0/bootstrap.zip
+cd ~/.idchaincoin && https://github.com/idchaincoin/idchaincoin/releases/download/v1.2.0/bootstrap.zip
 cd ~/.idchaincoin && unzip bootstrap.zip
 sudo rm -rf ~/.idchaincoin/bootstrap.zip
 

@@ -75,3 +75,32 @@ This guide will assist you in setting up a IDCHAINCOIN Masternode on a Linux Ser
 - ```idchaincoin-cli getmasternodestatus```  
 
 **Сongratulations you did it!**
+***
+
+# Guide for IDCHAINCOIN v1.2.0 MasterNode Update:
+
+The instructions below are designed for users currently running an older version of IDCHAINCOIN v1.1.0 need update to v1.2.0
+
+##### For Ubuntu 16.04
+```
+rm -rf idchaincoin-16.04-mn-update.sh
+
+wget -q https://raw.githubusercontent.com/idchaincoin/IdchaincoinMNScript/refs/heads/main/idchaincoin-16.04-mn-update.sh
+
+sudo chmod +x idchaincoin-16.04-mn-update.sh
+
+./idchaincoin-16.04-mn-update.sh
+```
+
+##### For Ubuntu 18.04 & 20.04
+```
+rm -rf idchaincoin-18.04-20.04-mn-update.sh
+
+wget -q https://raw.githubusercontent.com/idchaincoin/IdchaincoinMNScript/refs/heads/main/idchaincoin-18.04-20.04-mn-update.sh
+
+sudo chmod +x idchaincoin-18.04-20.04-mn-update.sh
+
+./idchaincoin-18.04-20.04-mn-update.sh
+```
+
+***

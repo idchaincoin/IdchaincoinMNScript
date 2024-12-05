@@ -20,7 +20,7 @@ function stop_daemon {
 }
 
 
-echo "Your IDCHAINCOIN Masternode Will be Updated To The Latest Version v1.0.0 Now" 
+echo "Your IDCHAINCOIN Masternode Will be Updated To The Latest Version v1.2.0 Now" 
 sudo apt-get -y install unzip
 
 #remove crontab entry to prevent daemon from starting
@@ -30,10 +30,10 @@ crontab -l | grep -v 'idchaincoinauto.sh' | crontab -
 stop_daemon
 
 rm -rf /usr/local/bin/idchaincoin*
-mkdir IDCHAINCOIN_1.0.0
-cd IDCHAINCOIN_1.0.0
-wget https://github.com/Idchaincoin/idchaincoin/releases/download/v1.0.0/idchaincoin-1.0.0-linux-16.04.tar.gz
-tar -xzvf idchaincoin-1.0.0-linux-16.04.tar.gz
+mkdir IDCHAINCOIN_1.2.0
+cd IDCHAINCOIN_1.2.0
+wget https://github.com/idchaincoin/idchaincoin/releases/download/v1.2.0/idchaincoin-1.2.0-Ubuntu-daemon-16.04.tar.gz
+tar -xzvf idchaincoin-1.2.0-Ubuntu-daemon-16.04.tar.gz
 mv idchaincoind /usr/local/bin/idchaincoind
 mv idchaincoin-cli /usr/local/bin/idchaincoin-cli
 chmod +x /usr/local/bin/idchaincoin*
@@ -44,11 +44,11 @@ rm -rf ~/.idchaincoin/evodb
 rm -rf ~/.idchaincoin/zerocoin
 rm -rf ~/.idchaincoin/peers.dat
 cd ~/.idchaincoin/
-wget https://github.com/Idchaincoin/idchaincoin/releases/download/v1.0.0/bootstrap.zip
+wget https://github.com/idchaincoin/idchaincoin/releases/download/v1.2.0/bootstrap.zip
 unzip bootstrap.zip
 
 cd ..
-rm -rf ~/.idchaincoin/bootstrap.zip ~/IDCHAINCOIN_1.0.0
+rm -rf ~/.idchaincoin/bootstrap.zip ~/IDCHAINCOIN_1.2.0
 
 # add new nodes to config file
 sed -i '/addnode/d' ~/.idchaincoin/idchaincoin.conf
